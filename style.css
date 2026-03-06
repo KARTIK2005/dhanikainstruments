@@ -314,6 +314,78 @@ body {
     line-height: 1.7;
 }
 
+/* --- Contact Us Section --- */
+.contact-section {
+    padding: 100px 40px;
+    background: #fff;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 18px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button i {
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.whatsapp-btn {
+    background-color: #25D366;
+    color: #fff;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+}
+
+.email-btn {
+    background-color: #7a0000;
+    color: #fff;
+}
+
+.email-btn:hover {
+    background-color: #5c0000;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(122, 0, 0, 0.3);
+}
+
 /* Base Content Section (Shared) */
 .content-section {
     max-width: 1300px;

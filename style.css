@@ -46,56 +46,10 @@ body {
     display: none;
 }
 
-.header-right {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    bottom: 15px;
+.search-box {
+    margin-left: 40px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.social-icons {
-    display: flex;
-}
-
-.social-icon {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 32px;
-    height: 32px;
-    background-color: #cccccc;
-    color: white;
-    text-decoration: none;
-    margin-left: 2px;
-    font-size: 14px;
-    transition: 0.2s ease-in-out;
-}
-
-.social-icon:hover {
-    background-color: #999999;
-}
-
-.contact-info {
-    margin-bottom: 25px;
-    /* Adjust to match baseline with logo */
-    color: #666666;
-    font-size: 13px;
-    display: flex;
-    gap: 20px;
-}
-
-.contact-info i {
-    color: #888888;
-    margin-right: 5px;
-    font-size: 14px;
-}
-
-.navbar-container {
-    display: none;
 }
 
 .nav-menu {
@@ -134,18 +88,12 @@ body {
     background-color: #cc1515;
 }
 
-.search-box {
-    display: flex;
-    align-items: center;
-    padding: 6px 0;
-}
-
 .search-box form {
     display: flex;
     border: 1px solid #dcdcdc;
     border-radius: 3px;
     overflow: hidden;
-    height: 30px;
+    height: 34px;
 }
 
 .search-box input {
@@ -201,23 +149,6 @@ body {
 
     .nav-menu li a {
         padding: 10px 15px;
-    }
-
-    .header-right {
-        position: static;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 15px;
-        padding-top: 15px;
-        border-top: 1px solid #f0f0f0;
-    }
-
-    .contact-info {
-        margin-bottom: 0px;
-        gap: 15px;
     }
 }
 
@@ -279,26 +210,13 @@ body {
         display: flex;
     }
 
-    .header-right {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        margin-top: 15px;
-        width: 100%;
-    }
 
-    .contact-info {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .social-icons {
-        margin-bottom: 5px;
-    }
 
     .search-box {
-        width: 100%;
+        width: auto;
+        margin-left: 0;
+        margin-top: 10px;
+        order: 3;
     }
 
     .search-box form {
@@ -306,6 +224,7 @@ body {
     }
 
     .search-box input {
-        width: 100%;
+        width: 150px;
+        /* Smaller search box on mobile header */
     }
 }

@@ -137,6 +137,25 @@ body {
     display: block;
 }
 
+.content-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.content-section h1 {
+    color: #7a0000;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.content-section p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
 /* --- Responsive Media Queries --- */
 
 /* Tablets and small desktops */

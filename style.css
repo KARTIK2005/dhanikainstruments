@@ -282,16 +282,16 @@ body {
 }
 
 .feature-icon-box {
-    width: 60px;
-    height: 60px;
-    background: rgba(122, 0, 0, 0.05);
+    width: 80px;
+    height: 80px;
+    background: transparent;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     color: #7a0000;
-    font-size: 24px;
+    font-size: 32px;
     transition: all 0.3s ease;
 }
 

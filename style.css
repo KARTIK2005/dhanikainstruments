@@ -567,97 +567,161 @@ body {
 
 /* --- Responsive Media Queries --- */
 
-/* Tablets and small desktops */
+/* --- Comprehensive Responsive Design --- */
+
+/* Tablets (1024px and below) */
 @media (max-width: 1024px) {
     .top-container {
-        padding: 10px 20px;
+        padding: 10px 30px;
     }
 
     .main-logo {
         max-height: 100px;
     }
 
-    .nav-menu {
-        margin-left: 20px;
+    .nav-menu li a {
+        font-size: 11px;
+        padding: 10px 8px;
     }
 
-    .nav-menu li a {
-        padding: 10px 15px;
+    .about-section h2,
+    .why-header h2,
+    .contact-section h2 {
+        font-size: 34px;
     }
 }
 
-/* Mobile Devices */
+/* Small Tablets & Large Phones (768px and below) */
 @media (max-width: 768px) {
     .top-container {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px 15px;
+        padding: 15px 20px;
+        min-height: 80px;
+        flex-wrap: wrap;
     }
 
-    .logo {
-        width: 100%;
-        justify-content: space-between;
-        position: relative;
+    .header-right {
+        display: none;
+        /* Hide desktop search */
     }
 
     .main-logo {
-        max-height: 70px;
+        max-height: 80px;
     }
 
-    /* Mobile Navigation Bar (Hamburger Style) */
+    /* Mobile Menu Implementation */
     .menu-icon {
-        display: block;
-        font-size: 26px;
-        color: #004b99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        color: #7a0000;
         cursor: pointer;
-        padding: 10px;
+        z-index: 1001;
     }
 
     .nav-menu {
-        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: #fff;
         flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: white;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 100px 30px;
+        transition: right 0.4s ease;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
         z-index: 1000;
-        border-top: 1px solid #eee;
     }
 
-
+    .menu-toggle:checked~.nav-menu {
+        right: 0;
+    }
 
     .nav-menu li {
         width: 100%;
+        margin-bottom: 5px;
     }
 
     .nav-menu li a {
-        padding: 15px 20px;
+        font-size: 16px;
+        padding: 15px 0;
+        border-bottom: 1px solid #f0f0f0;
+        color: #333;
+    }
+
+    /* Section adjustments */
+    .about-section,
+    .why-us-section,
+    .contact-section {
+        padding: 60px 20px;
+    }
+
+    .about-section h2,
+    .why-header h2,
+    .contact-section h2 {
+        font-size: 28px;
+    }
+
+    .about-content {
+        font-size: 16px;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cta-button {
         width: 100%;
-        border-bottom: 1px solid #f9f9f9;
+        justify-content: center;
     }
 
-    /* Show menu when checkbox is checked */
-    .menu-toggle:checked~.nav-menu {
-        display: flex;
+    .product-grid {
+        grid-template-columns: 1fr;
     }
 
+    .category-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
 
-
-    .search-box {
-        width: auto;
-        margin-left: 0;
-        margin-top: 10px;
-        order: 3;
+/* Small Phones (480px and below) */
+@media (max-width: 480px) {
+    .main-logo {
+        max-height: 60px;
     }
 
-    .search-box form {
-        width: 100%;
+    .section-tag {
+        font-size: 14px;
     }
 
-    .search-box input {
-        width: 150px;
-        /* Smaller search box on mobile header */
+    .about-section h2,
+    .why-header h2,
+    .contact-section h2 {
+        font-size: 24px;
+    }
+
+    .feature-card {
+        padding: 30px 20px;
+    }
+
+    .feature-icon-box {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        gap: 15px;
+    }
+
+    .social-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
     }
 }

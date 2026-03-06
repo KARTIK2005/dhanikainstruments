@@ -137,6 +137,184 @@ body {
     display: block;
 }
 
+/* --- Entrance Animations --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-up {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
+}
+
+.delay-4 {
+    animation-delay: 0.8s;
+}
+
+/* --- About Us Section --- */
+.about-section {
+    padding: 80px 40px;
+    background: linear-gradient(135deg, #fff 0%, #fcf8f8 100%);
+    text-align: center;
+    overflow: hidden;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-tag {
+    color: #7a0000;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.about-content {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.about-content::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: #7a0000;
+}
+
+/* --- Why Choose Us Section --- */
+.why-us-section {
+    padding: 100px 40px;
+    background-color: #f4f4f4;
+}
+
+.why-us-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.why-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.why-header h2 {
+    font-size: 36px;
+    color: #333;
+    font-weight: 800;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(122, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 0%;
+    background: #7a0000;
+    transition: height 0.4s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover::before {
+    height: 100%;
+}
+
+.feature-icon-box {
+    width: 60px;
+    height: 60px;
+    background: rgba(122, 0, 0, 0.05);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    color: #7a0000;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon-box {
+    background: #7a0000;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Base Content Section (Shared) */
 .content-section {
     max-width: 1300px;
     margin: 40px auto;
